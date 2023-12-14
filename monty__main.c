@@ -1,5 +1,5 @@
-#include "monty.h"
 #include <stdio.h>
+#include "monty.h"
 #define _GNU_SOURCE
 #include <stdlib.h>
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		counter++;
 		if (read_line > 0)
 		{
-			execute(content, &stack, counter, file);
+			execute_(content, &stack, counter, file);
 		}
 		free(content);
 	}
